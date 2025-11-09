@@ -36,6 +36,12 @@ A code snippet sharing API that builds essential backend development skills:
 - **Skills Acquired**: Router-based URL management, automated API generation, ViewSet mastery, convention over configuration, and enterprise-grade automation patterns
 - **Industry Relevance**: Router-based APIs with automatic URL generation represent the most efficient and scalable approach for enterprise development
 
+### 4. Bloggie Platform (`bloggie/`) - **Enterprise Social Blogging System**
+A comprehensive social blogging platform demonstrating enterprise-level application architecture:
+- **Learning Focus**: Complex multi-app Django projects with social features and advanced authentication systems
+- **Skills Acquired**: Multi-app architecture, custom user models, social interactions, content management, and enterprise authentication patterns
+- **Industry Relevance**: Large-scale social platforms require sophisticated user management, content systems, and interaction features essential for modern web applications
+
 **Key Features Implemented:**
 - Django REST Framework Router system for automatic URL generation and management
 - Complete API automation with DefaultRouter and ViewSet registration
@@ -45,6 +51,16 @@ A code snippet sharing API that builds essential backend development skills:
 - Enterprise-standard patterns used in large-scale production applications
 - Self-managing API structure with automatic URL pattern generation
 - Production-ready architecture requiring minimal ongoing maintenance
+
+**Bloggie Platform Key Features:**
+- **Multi-App Architecture**: Users, Posts, Comments, Likes, Follows, Shares, Newsletters, and Contacts apps
+- **Custom User Model**: Extended AbstractUser with roles (User, Admin, Moderator, Editor) and status management
+- **Advanced Post System**: Draft/Published/Archived status, categorization, tagging, and content management
+- **Social Features**: User following, post likes, sharing functionality, and comment systems
+- **Token Authentication**: Complete REST API with secure token-based authentication system
+- **Contact Management**: Professional contact and newsletter subscription handling
+- **Comprehensive API**: Full REST endpoints with detailed documentation in API_ENDPOINTS.md
+- **Enterprise Security**: Role-based permissions and authentication middleware
 
 ## Project Structure
 
@@ -110,6 +126,27 @@ A code snippet sharing API that builds essential backend development skills:
         ├── urls.py           # API URL patterns
         ├── views.py          # API view functions
         └── migrations/       # Database migrations
+└── bloggie/                  # Enterprise Social Blogging Platform
+    ├── db.sqlite3            # Database file
+    ├── manage.py             # Django management script
+    ├── API_ENDPOINTS.md      # Complete API documentation
+    ├── AUTH_ENDPOINTS.md     # Authentication API docs
+    ├── AUTH_SETUP.md         # Authentication setup guide
+    ├── bloggie/              # Main project settings
+    │   ├── __init__.py
+    │   ├── asgi.py
+    │   ├── settings.py       # Project settings with DRF
+    │   ├── urls.py           # URL configuration
+    │   └── wsgi.py
+    ├── users/                # Custom user management
+    ├── posts/                # Blog post system
+    ├── comments/             # Comment functionality
+    ├── likes/                # Like/reaction system
+    ├── follows/              # User following system
+    ├── shares/               # Content sharing
+    ├── newsletters/          # Newsletter management
+    ├── contacts/             # Contact management
+    └── views/                # Content views tracking
 ```
 
 ## Technical Stack & Professional Tools
@@ -170,6 +207,30 @@ These tools represent industry standards that I'm learning to prepare for profes
    http GET http://127.0.0.1:8000/snippets/
    ```
 
+6. **For Bloggie Platform (Enterprise Social Blogging):**
+   ```bash
+   cd bloggie
+   python manage.py migrate
+   python manage.py createsuperuser  # Create admin user for full access
+   python manage.py runserver
+   ```
+   
+   **API Access:**
+   - Main API: http://127.0.0.1:8000/api/
+   - Authentication: See AUTH_ENDPOINTS.md for token setup
+   - Full documentation: See API_ENDPOINTS.md
+   
+   **Test API with authentication:**
+   ```bash
+   # First create a user account
+   curl -X POST http://127.0.0.1:8000/api/users/auth/signup/ \
+     -H "Content-Type: application/json" \
+     -d '{"username": "testuser", "password": "testpass123", "email": "test@example.com"}'
+   
+   # Use the returned token for authenticated requests
+   curl -H "Authorization: Token YOUR_TOKEN_HERE" http://127.0.0.1:8000/api/posts/
+   ```
+
 ## Skills Acquired & Professional Development
 
 ### Django Tutorial Project - **Foundation Building**
@@ -195,6 +256,16 @@ These tools represent industry standards that I'm learning to prepare for profes
 - **ViewSet Integration**: Complete ViewSet lifecycle managed through router registration
 - **Production Efficiency**: Industry-standard automation patterns for scalable development
 - **Framework Mastery**: Ultimate utilization of Django REST Framework's automation capabilities
+
+### Bloggie Platform - **Enterprise Social Media Development**
+- **Multi-App Architecture**: Designing complex applications with interconnected Django apps
+- **Custom User Models**: Extending AbstractUser for enterprise user management with roles and permissions
+- **Social Features**: Building user interactions including follows, likes, shares, and comments
+- **Content Management**: Advanced post system with status workflows, categorization, and tagging
+- **Authentication Systems**: Token-based API authentication with comprehensive security patterns
+- **API Documentation**: Professional API documentation and endpoint management
+- **Newsletter Integration**: Email marketing and subscriber management systems
+- **Contact Systems**: Business contact management and communication workflows
 
 ## Project Portfolio & Technical Showcase
 
@@ -222,6 +293,28 @@ These tools represent industry standards that I'm learning to prepare for profes
   - Related snippets through foreign key relationships
   - Authentication and permission integration
 
+### Bloggie Platform - Social Blog App **[Enterprise Application Demo]**
+- **Post**: Advanced content management with enterprise features
+  - Multi-status workflow (Draft/Published/Archived)
+  - Category and tag-based content organization
+  - Author and user relationship modeling
+  - Auto-generated slugs and excerpts
+  - Timestamp tracking for publishing workflows
+
+- **User**: Extended custom user model for enterprise applications
+  - Role-based access control (User/Admin/Moderator/Editor)
+  - Status management (Active/Inactive/Banned)
+  - Profile fields for social features
+  - Authentication integration with Django REST Framework tokens
+
+- **Social Features**: Complete social media functionality
+  - Comments system with threaded discussions
+  - User following and follower relationships
+  - Post likes and reaction systems
+  - Content sharing and engagement tracking
+  - Newsletter subscription management
+  - Professional contact management system
+
 This demonstrates advanced Django model relationships, custom processing, and production-ready API architecture.
 
 ## Testing & Quality Assurance Skills
@@ -240,6 +333,10 @@ python manage.py test fistapp
 # Django REST Framework - API endpoint testing
 cd rest_tutorial
 python manage.py test snippets
+
+# Bloggie Platform - Enterprise social features testing
+cd bloggie
+python manage.py test
 ```
 
 ## Career Development Goals
@@ -265,13 +362,15 @@ This learning repository demonstrates my commitment to building production-ready
 ## Next Steps in My Learning Journey
 
 **Immediate Goals:**
-- Add user authentication and authorization systems
-- Implement advanced REST API features like pagination and filtering
-- Learn frontend integration with modern JavaScript frameworks
-- Deploy applications to cloud platforms for portfolio demonstration
+- Enhance Bloggie platform with advanced social features and real-time functionality
+- Add frontend integration with modern JavaScript frameworks (React/Vue)
+- Implement advanced security features and performance optimizations
+- Deploy applications to cloud platforms for live portfolio demonstration
+- Add comprehensive testing coverage across all applications
 
 **Career Objectives:**
-- Build a portfolio that demonstrates full-stack capabilities
-- Develop skills applicable to startup and enterprise environments
-- Master modern web development patterns and industry best practices
-- Prepare for technical interviews and practical coding assessments
+- Demonstrate enterprise-level Django development capabilities through Bloggie platform
+- Showcase progression from basic concepts through complex social media architectures
+- Build production-ready applications suitable for startup and enterprise environments
+- Master advanced Django patterns including multi-app architecture and custom authentication
+- Prepare comprehensive portfolio for senior-level Django developer positions
