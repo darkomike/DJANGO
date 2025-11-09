@@ -32,20 +32,20 @@ A restaurant reservation system that demonstrates real-world business logic impl
 
 ### 3. Django REST Framework Tutorial (`rest_tutorial/`) - **Modern API Development**
 A code snippet sharing API that builds essential backend development skills:
-- **Learning Focus**: RESTful API design and implementation using industry-standard tools and production-level security patterns
-- **Skills Acquired**: API serialization, authentication, custom permissions, object-level security, user management, automated processing, and production-ready architecture
-- **Industry Relevance**: Secure REST APIs with granular permissions are fundamental in modern web applications
+- **Learning Focus**: RESTful API design and implementation using industry-standard tools and hypermedia-driven architecture
+- **Skills Acquired**: HATEOAS implementation, hypermedia APIs, specialized renderers, pagination, API discovery, advanced serialization, and enterprise-grade architecture
+- **Industry Relevance**: Hypermedia-driven REST APIs following HATEOAS principles are the gold standard for enterprise applications
 
 **Key Features Implemented:**
+- Hypermedia-driven API with HyperlinkedModelSerializer for self-discovering architecture
+- API root endpoint providing central navigation to all available resources
+- Specialized HTML rendering for syntax highlighting with StaticHTMLRenderer
+- Named URL patterns with reverse URL generation for robust API navigation
+- Pagination configuration for scalable data handling in production environments
 - Custom permission classes for object-level access control (IsOwnerOrReadOnly)
 - User authentication and authorization system with Django's built-in User model
-- Granular permission system combining multiple permission classes
-- Object-level security ensuring users can only modify their own content
-- Automatic syntax highlighting with custom model save() method using Pygments
-- User management API endpoints for complete user operations
-- Owner-based snippet association with read-only serialization
-- Django REST Framework authentication integration (api-auth/)
-- Production-ready API with advanced security, user management, and automated processing
+- Hyperlinked resource relationships for seamless API navigation
+- Production-ready API following HATEOAS (Hypermedia as the Engine of Application State) principles
 
 ## Project Structure
 
@@ -189,13 +189,13 @@ These tools represent industry standards that I'm learning to prepare for profes
 
 ### Django REST Framework Tutorial - **Modern Backend Development**
 - **REST APIs**: Building APIs that power modern web and mobile applications
-- **Authentication & Authorization**: Implementing secure user-based access control with Django's permission system
-- **Custom Permissions**: Creating object-level permission classes for granular security control
-- **Security Architecture**: Combining multiple permission classes for comprehensive access control
-- **Object-Level Security**: Ensuring users can only modify content they own
-- **User Management**: Creating complete user API endpoints for user registration and management
-- **Advanced Model Logic**: Custom save methods for automated processing (syntax highlighting)
-- **Production Security**: Industry-standard permission patterns used in enterprise applications
+- **Hypermedia Architecture**: Implementing HATEOAS (Hypermedia as the Engine of Application State) for self-discovering APIs
+- **API Navigation**: Creating central root endpoints and hyperlinked resource relationships
+- **Specialized Rendering**: Custom HTML rendering for syntax-highlighted content display
+- **Pagination Systems**: Implementing scalable data handling for large datasets
+- **URL Management**: Named URL patterns with reverse generation for robust API architecture
+- **Advanced Serialization**: HyperlinkedModelSerializer for seamless resource navigation
+- **Enterprise Architecture**: Building fully hypermedia-driven APIs following industry best practices
 
 ## Project Portfolio & Technical Showcase
 
