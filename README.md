@@ -32,18 +32,19 @@ A restaurant reservation system that demonstrates real-world business logic impl
 
 ### 3. Django REST Framework Tutorial (`rest_tutorial/`) - **Modern API Development**
 A code snippet sharing API that builds essential backend development skills:
-- **Learning Focus**: RESTful API design and implementation using industry-standard tools
-- **Skills Acquired**: API serialization, HTTP methods, JSON handling, content negotiation, and advanced view decorators
+- **Learning Focus**: RESTful API design and implementation using industry-standard tools and patterns
+- **Skills Acquired**: API serialization, HTTP methods, JSON handling, content negotiation, class-based views, and object-oriented API design
 - **Industry Relevance**: REST APIs are fundamental in modern web architecture and microservices
 
 **Key Features Implemented:**
+- Class-based APIViews for object-oriented API design
 - RESTful endpoints for CRUD operations with proper HTTP status codes
 - JSON serialization with Django REST Framework
-- Advanced API view decorators (`@api_view`) for cleaner code
+- Advanced exception handling with Http404 and proper error responses
 - Format suffix patterns for content negotiation (JSON/XML support)
 - Syntax highlighting using Pygments library
 - Support for multiple programming languages
-- Database integration with proper error handling
+- Database integration with proper error handling and object retrieval methods
 
 ## Project Structure
 
@@ -188,11 +189,12 @@ These tools represent industry standards that I'm learning to prepare for profes
 ### Django REST Framework Tutorial - **Modern Backend Development**
 - **REST APIs**: Building APIs that power modern web and mobile applications
 - **Serializers**: Converting data between formats - crucial for microservices architecture
-- **API Views**: Creating endpoints with proper decorators and HTTP status handling
+- **Class-Based Views**: Using APIView classes for object-oriented API design and better code organization
+- **HTTP Method Handling**: Implementing separate methods (get, post, put, delete) for clean REST architecture
 - **Content Negotiation**: Handling different data formats and format suffixes
-- **Error Handling**: Implementing proper HTTP responses and status codes
-- **Advanced Decorators**: Using `@api_view` for cleaner, more maintainable code
-- **Database Integration**: Connecting APIs to persistent storage with proper error management
+- **Exception Handling**: Using Http404 and proper error management patterns
+- **Object Retrieval**: Implementing reusable object fetching methods for DRY principles
+- **Database Integration**: Connecting APIs to persistent storage with advanced error handling
 
 ## Project Portfolio & Technical Showcase
 
