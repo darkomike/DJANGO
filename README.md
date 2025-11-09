@@ -33,15 +33,17 @@ A restaurant reservation system that demonstrates real-world business logic impl
 ### 3. Django REST Framework Tutorial (`rest_tutorial/`) - **Modern API Development**
 A code snippet sharing API that builds essential backend development skills:
 - **Learning Focus**: RESTful API design and implementation using industry-standard tools
-- **Skills Acquired**: API serialization, HTTP methods, JSON handling, and syntax highlighting
+- **Skills Acquired**: API serialization, HTTP methods, JSON handling, content negotiation, and advanced view decorators
 - **Industry Relevance**: REST APIs are fundamental in modern web architecture and microservices
 
 **Key Features Implemented:**
-- RESTful endpoints for CRUD operations
+- RESTful endpoints for CRUD operations with proper HTTP status codes
 - JSON serialization with Django REST Framework
+- Advanced API view decorators (`@api_view`) for cleaner code
+- Format suffix patterns for content negotiation (JSON/XML support)
 - Syntax highlighting using Pygments library
 - Support for multiple programming languages
-- Database integration with API responses
+- Database integration with proper error handling
 
 ## Project Structure
 
@@ -186,10 +188,11 @@ These tools represent industry standards that I'm learning to prepare for profes
 ### Django REST Framework Tutorial - **Modern Backend Development**
 - **REST APIs**: Building APIs that power modern web and mobile applications
 - **Serializers**: Converting data between formats - crucial for microservices architecture
-- **API Views**: Creating endpoints that follow REST principles - industry standard practice
-- **Content Negotiation**: Handling different data formats - necessary for flexible APIs
-- **Syntax Highlighting**: Integrating third-party packages - common development task
-- **Database Integration**: Connecting APIs to persistent storage - backend engineering fundamental
+- **API Views**: Creating endpoints with proper decorators and HTTP status handling
+- **Content Negotiation**: Handling different data formats and format suffixes
+- **Error Handling**: Implementing proper HTTP responses and status codes
+- **Advanced Decorators**: Using `@api_view` for cleaner, more maintainable code
+- **Database Integration**: Connecting APIs to persistent storage with proper error management
 
 ## Project Portfolio & Technical Showcase
 
