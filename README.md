@@ -32,19 +32,19 @@ A restaurant reservation system that demonstrates real-world business logic impl
 
 ### 3. Django REST Framework Tutorial (`rest_tutorial/`) - **Modern API Development**
 A code snippet sharing API that builds essential backend development skills:
-- **Learning Focus**: RESTful API design and implementation using industry-standard tools and mastery-level patterns
-- **Skills Acquired**: API serialization, HTTP methods, JSON handling, content negotiation, concrete generic views, and production-ready architecture
-- **Industry Relevance**: REST APIs are fundamental in modern web architecture and microservices
+- **Learning Focus**: RESTful API design and implementation using industry-standard tools and production-level patterns
+- **Skills Acquired**: API serialization, authentication, permissions, user management, automated processing, and production-ready architecture
+- **Industry Relevance**: REST APIs with authentication and user management are fundamental in modern web applications
 
 **Key Features Implemented:**
-- Django REST Framework concrete generic views (ListCreateAPIView, RetrieveUpdateDestroyAPIView)
-- Production-ready API implementation with minimal, elegant code
-- Complete CRUD functionality in just a few lines using framework conventions
-- Built-in serialization, validation, and error handling
-- Format suffix patterns for content negotiation (JSON/XML support)
-- Syntax highlighting using Pygments library
-- Support for multiple programming languages
-- Industry-standard API architecture following Django REST Framework best practices
+- User authentication and authorization system with Django's built-in User model
+- Permission-based access control (IsAuthenticatedOrReadOnly)
+- Automatic syntax highlighting with custom model save() method using Pygments
+- User management API endpoints for complete user operations
+- Owner-based snippet association and read-only serialization
+- Django REST Framework authentication integration (api-auth/)
+- Advanced model relationships and serializer configurations
+- Production-ready API with security, user management, and automated processing
 
 ## Project Structure
 
@@ -188,13 +188,13 @@ These tools represent industry standards that I'm learning to prepare for profes
 
 ### Django REST Framework Tutorial - **Modern Backend Development**
 - **REST APIs**: Building APIs that power modern web and mobile applications
-- **Serializers**: Converting data between formats - crucial for microservices architecture
-- **Concrete Generic Views**: Using Django REST Framework's most elegant API patterns (ListCreateAPIView, RetrieveUpdateDestroyAPIView)
-- **Production Patterns**: Writing production-ready APIs with minimal code using framework conventions
-- **Framework Mastery**: Leveraging DRF's full capabilities for maximum efficiency and maintainability
-- **Industry Standards**: Following the exact patterns used in professional Django applications
-- **Code Elegance**: Achieving complete CRUD functionality with just queryset and serializer declarations
-- **Built-in Features**: Automatic handling of validation, serialization, pagination, and error responses
+- **Authentication & Authorization**: Implementing secure user-based access control with Django's permission system
+- **User Management**: Creating complete user API endpoints for user registration and management
+- **Advanced Model Logic**: Custom save methods for automated processing (syntax highlighting)
+- **Permissions System**: Using IsAuthenticatedOrReadOnly for secure read/write access patterns
+- **Serializer Relationships**: Managing complex data relationships between users and content
+- **Security Integration**: Django REST Framework authentication with browsable API security
+- **Production Features**: Building APIs with authentication, permissions, and automated processing ready for deployment
 
 ## Project Portfolio & Technical Showcase
 
@@ -207,15 +207,22 @@ These tools represent industry standards that I'm learning to prepare for profes
 - **Reservation**: Implements complex business logic with customer data validation
 
 ### Django REST Framework Tutorial - Snippets App **[API Development Demo]**
-- **Snippet**: Showcases advanced model design with multiple field types
+- **Snippet**: Showcases advanced model design with automated processing capabilities
   - `created`: Auto-timestamp implementation
   - `title`: Optional field handling
   - `code`: Large text storage for content
   - `linenos`: Boolean logic for UI preferences
   - `language`: Choice field with dynamic options
   - `style`: Integration with third-party library choices
+  - `owner`: Foreign key relationship to User model for ownership tracking
+  - `highlighted`: Auto-generated HTML syntax highlighting using custom save() method
 
-This model demonstrates my understanding of Django's field types, choices, and integration capabilities.
+- **User**: Demonstrates user management and relationship modeling
+  - User API endpoints for complete user management
+  - Related snippets through foreign key relationships
+  - Authentication and permission integration
+
+This demonstrates advanced Django model relationships, custom processing, and production-ready API architecture.
 
 ## Testing & Quality Assurance Skills
 
