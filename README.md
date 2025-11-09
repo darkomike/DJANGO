@@ -32,19 +32,19 @@ A restaurant reservation system that demonstrates real-world business logic impl
 
 ### 3. Django REST Framework Tutorial (`rest_tutorial/`) - **Modern API Development**
 A code snippet sharing API that builds essential backend development skills:
-- **Learning Focus**: RESTful API design and implementation using industry-standard tools and ViewSet architecture
-- **Skills Acquired**: ViewSet mastery, custom actions, flexible URL mapping, advanced permissions, hypermedia architecture, and enterprise-grade development patterns
-- **Industry Relevance**: ViewSet-based APIs represent the most powerful and flexible approach to REST API development
+- **Learning Focus**: RESTful API design and implementation using industry-standard tools and automated routing architecture
+- **Skills Acquired**: Router-based URL management, automated API generation, ViewSet mastery, convention over configuration, and enterprise-grade automation patterns
+- **Industry Relevance**: Router-based APIs with automatic URL generation represent the most efficient and scalable approach for enterprise development
 
 **Key Features Implemented:**
-- Django REST Framework ViewSets (ModelViewSet, ReadOnlyModelViewSet) for ultimate flexibility
-- Custom actions with `@action` decorator for specialized endpoints (highlight functionality)
-- Flexible URL mapping with ViewSet.as_view() and action mapping for fine-grained control
-- Consolidated permission handling with multiple permission classes in ViewSet architecture
-- Hypermedia-driven API with HyperlinkedModelSerializer for self-discovering architecture
-- Advanced serializer relationships and custom rendering capabilities
-- Production-ready ViewSet architecture following Django REST Framework best practices
-- Enterprise-level API design with maximum code efficiency and maintainability
+- Django REST Framework Router system for automatic URL generation and management
+- Complete API automation with DefaultRouter and ViewSet registration
+- Convention over configuration approach eliminating manual URL mapping
+- Automatic generation of all CRUD endpoints through router.register()
+- Maximum code efficiency with minimal configuration and maintenance overhead
+- Enterprise-standard patterns used in large-scale production applications
+- Self-managing API structure with automatic URL pattern generation
+- Production-ready architecture requiring minimal ongoing maintenance
 
 ## Project Structure
 
@@ -188,13 +188,13 @@ These tools represent industry standards that I'm learning to prepare for profes
 
 ### Django REST Framework Tutorial - **Modern Backend Development**
 - **REST APIs**: Building APIs that power modern web and mobile applications
-- **ViewSet Architecture**: Using Django REST Framework's most powerful and flexible API development pattern
-- **Custom Actions**: Implementing specialized endpoints with @action decorator for extended functionality
-- **Flexible URL Mapping**: Advanced ViewSet.as_view() with action mapping for granular control
-- **Consolidated Logic**: Single ViewSet classes handling complete resource lifecycle management
-- **Advanced Permissions**: Integrated permission handling with multiple permission classes
-- **Code Efficiency**: Maximum functionality with minimal code using ViewSet patterns
-- **Enterprise Patterns**: Industry-standard ViewSet architecture for scalable, maintainable APIs
+- **Router Architecture**: Using Django REST Framework's automated routing system for maximum efficiency
+- **Automatic URL Generation**: Router-based systems that eliminate manual URL configuration
+- **Convention Over Configuration**: Following Django REST Framework automation patterns
+- **Enterprise Automation**: Large-scale application patterns with minimal maintenance overhead
+- **ViewSet Integration**: Complete ViewSet lifecycle managed through router registration
+- **Production Efficiency**: Industry-standard automation patterns for scalable development
+- **Framework Mastery**: Ultimate utilization of Django REST Framework's automation capabilities
 
 ## Project Portfolio & Technical Showcase
 
