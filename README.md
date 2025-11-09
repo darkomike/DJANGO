@@ -32,20 +32,19 @@ A restaurant reservation system that demonstrates real-world business logic impl
 
 ### 3. Django REST Framework Tutorial (`rest_tutorial/`) - **Modern API Development**
 A code snippet sharing API that builds essential backend development skills:
-- **Learning Focus**: RESTful API design and implementation using industry-standard tools and hypermedia-driven architecture
-- **Skills Acquired**: HATEOAS implementation, hypermedia APIs, specialized renderers, pagination, API discovery, advanced serialization, and enterprise-grade architecture
-- **Industry Relevance**: Hypermedia-driven REST APIs following HATEOAS principles are the gold standard for enterprise applications
+- **Learning Focus**: RESTful API design and implementation using industry-standard tools and ViewSet architecture
+- **Skills Acquired**: ViewSet mastery, custom actions, flexible URL mapping, advanced permissions, hypermedia architecture, and enterprise-grade development patterns
+- **Industry Relevance**: ViewSet-based APIs represent the most powerful and flexible approach to REST API development
 
 **Key Features Implemented:**
+- Django REST Framework ViewSets (ModelViewSet, ReadOnlyModelViewSet) for ultimate flexibility
+- Custom actions with `@action` decorator for specialized endpoints (highlight functionality)
+- Flexible URL mapping with ViewSet.as_view() and action mapping for fine-grained control
+- Consolidated permission handling with multiple permission classes in ViewSet architecture
 - Hypermedia-driven API with HyperlinkedModelSerializer for self-discovering architecture
-- API root endpoint providing central navigation to all available resources
-- Specialized HTML rendering for syntax highlighting with StaticHTMLRenderer
-- Named URL patterns with reverse URL generation for robust API navigation
-- Pagination configuration for scalable data handling in production environments
-- Custom permission classes for object-level access control (IsOwnerOrReadOnly)
-- User authentication and authorization system with Django's built-in User model
-- Hyperlinked resource relationships for seamless API navigation
-- Production-ready API following HATEOAS (Hypermedia as the Engine of Application State) principles
+- Advanced serializer relationships and custom rendering capabilities
+- Production-ready ViewSet architecture following Django REST Framework best practices
+- Enterprise-level API design with maximum code efficiency and maintainability
 
 ## Project Structure
 
@@ -189,13 +188,13 @@ These tools represent industry standards that I'm learning to prepare for profes
 
 ### Django REST Framework Tutorial - **Modern Backend Development**
 - **REST APIs**: Building APIs that power modern web and mobile applications
-- **Hypermedia Architecture**: Implementing HATEOAS (Hypermedia as the Engine of Application State) for self-discovering APIs
-- **API Navigation**: Creating central root endpoints and hyperlinked resource relationships
-- **Specialized Rendering**: Custom HTML rendering for syntax-highlighted content display
-- **Pagination Systems**: Implementing scalable data handling for large datasets
-- **URL Management**: Named URL patterns with reverse generation for robust API architecture
-- **Advanced Serialization**: HyperlinkedModelSerializer for seamless resource navigation
-- **Enterprise Architecture**: Building fully hypermedia-driven APIs following industry best practices
+- **ViewSet Architecture**: Using Django REST Framework's most powerful and flexible API development pattern
+- **Custom Actions**: Implementing specialized endpoints with @action decorator for extended functionality
+- **Flexible URL Mapping**: Advanced ViewSet.as_view() with action mapping for granular control
+- **Consolidated Logic**: Single ViewSet classes handling complete resource lifecycle management
+- **Advanced Permissions**: Integrated permission handling with multiple permission classes
+- **Code Efficiency**: Maximum functionality with minimal code using ViewSet patterns
+- **Enterprise Patterns**: Industry-standard ViewSet architecture for scalable, maintainable APIs
 
 ## Project Portfolio & Technical Showcase
 
