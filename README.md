@@ -32,19 +32,20 @@ A restaurant reservation system that demonstrates real-world business logic impl
 
 ### 3. Django REST Framework Tutorial (`rest_tutorial/`) - **Modern API Development**
 A code snippet sharing API that builds essential backend development skills:
-- **Learning Focus**: RESTful API design and implementation using industry-standard tools and production-level patterns
-- **Skills Acquired**: API serialization, authentication, permissions, user management, automated processing, and production-ready architecture
-- **Industry Relevance**: REST APIs with authentication and user management are fundamental in modern web applications
+- **Learning Focus**: RESTful API design and implementation using industry-standard tools and production-level security patterns
+- **Skills Acquired**: API serialization, authentication, custom permissions, object-level security, user management, automated processing, and production-ready architecture
+- **Industry Relevance**: Secure REST APIs with granular permissions are fundamental in modern web applications
 
 **Key Features Implemented:**
+- Custom permission classes for object-level access control (IsOwnerOrReadOnly)
 - User authentication and authorization system with Django's built-in User model
-- Permission-based access control (IsAuthenticatedOrReadOnly)
+- Granular permission system combining multiple permission classes
+- Object-level security ensuring users can only modify their own content
 - Automatic syntax highlighting with custom model save() method using Pygments
 - User management API endpoints for complete user operations
-- Owner-based snippet association and read-only serialization
+- Owner-based snippet association with read-only serialization
 - Django REST Framework authentication integration (api-auth/)
-- Advanced model relationships and serializer configurations
-- Production-ready API with security, user management, and automated processing
+- Production-ready API with advanced security, user management, and automated processing
 
 ## Project Structure
 
@@ -189,12 +190,12 @@ These tools represent industry standards that I'm learning to prepare for profes
 ### Django REST Framework Tutorial - **Modern Backend Development**
 - **REST APIs**: Building APIs that power modern web and mobile applications
 - **Authentication & Authorization**: Implementing secure user-based access control with Django's permission system
+- **Custom Permissions**: Creating object-level permission classes for granular security control
+- **Security Architecture**: Combining multiple permission classes for comprehensive access control
+- **Object-Level Security**: Ensuring users can only modify content they own
 - **User Management**: Creating complete user API endpoints for user registration and management
 - **Advanced Model Logic**: Custom save methods for automated processing (syntax highlighting)
-- **Permissions System**: Using IsAuthenticatedOrReadOnly for secure read/write access patterns
-- **Serializer Relationships**: Managing complex data relationships between users and content
-- **Security Integration**: Django REST Framework authentication with browsable API security
-- **Production Features**: Building APIs with authentication, permissions, and automated processing ready for deployment
+- **Production Security**: Industry-standard permission patterns used in enterprise applications
 
 ## Project Portfolio & Technical Showcase
 
